@@ -1,7 +1,7 @@
 <script setup>
-import { RouterView } from 'vue-router';
+import DefeaultLayout from './components/layout/defeaultLayout.vue';
 </script>
 
 <template>
-  <RouterView />
+  <DefeaultLayout />
 </template>
