@@ -18,8 +18,15 @@ async function carregarDados() {
   console.log('Pets - ', pets.value);
   console.log('Tutores - ', tutores.value);
 }
-function nomeDoTutor(){
-  
+function nomeDoTutor(tutorId){
+  for(const tutor of tutores.value){
+    if(tutor.id == tutorId){
+      return tutor.nome
+    }
+    else{
+      return 'Opss Tutor não encontrado!'
+    }
+  }
 }
 onMounted(carregarDados);
 </script>
@@ -52,7 +59,7 @@ onMounted(carregarDados);
           <td>{{ pet.id }}</td>
           <td>{{ pet.nome }}</td>
           <td>{{ pet.especie }}</td>
-          <td>{{ pet.tutorId }}</td>
+          <td>{{ nomeDoTutor(pet.tutorId) }}</td>
         </tr>
       </tbody>
     </table>
