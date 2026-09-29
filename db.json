@@ -1,12 +1,57 @@
-
-
 {
   "tutores": [
-    { "id": "1", "nome": "Ana", "telefone": "47999990000" },
-    { "id": "2", "nome": "Carlos", "telefone": "47988880000" }
+    {
+      "id": "1",
+      "nome": "Ana",
+      "telefone": "47999990000"
+    },
+    {
+      "id": "2",
+      "nome": "Carlos",
+      "telefone": "47988880000"
+    }
   ],
   "pets": [
-    { "id": "1", "nome": "Safira", "especie": "Cachorro", "tutorId": "1" },
-    { "id": "2", "nome": "Nino", "especie": "Gato", "tutorId": "1" }
-  ]
+    {
+      "id": "1",
+      "nome": "Safira",
+      "especie": "Cachorro",
+      "tutorId": "1"
+    },
+    {
+      "id": "2",
+      "nome": "Nino",
+      "especie": "Gato",
+      "tutorId": "1"
+    },
+    {
+      "nome": "Igor Decker",
+      "especie": "Gato",
+      "tutorId": "Ana",
+      "id": "8LzaL_08DSs"
+    },
+    {
+      "nome": "Igor Decker",
+      "especie": "Cachorro",
+      "tutorId": "Carlos",
+      "id": "MxVV1NcCsVg"
+    },
+    {
+      "nome": "Igordecker",
+      "especie": "Cavalo",
+      "tutorId": {
+        "id": "1",
+        "nome": "Ana",
+        "telefone": "47999990000"
+      },
+      "id": "KugUDLrktrQ"
+    },
+    {
+      "nome": "cdewgfwe",
+      "especie": "Gato",
+      "tutorId": "1",
+      "id": "9ijMvjP8PKA"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
